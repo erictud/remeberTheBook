@@ -1,0 +1,24 @@
+{
+  "books": [
+    {
+      "bookName": "Adventures of Huckleberry Finn",
+      "author": "Mark Twain",
+      "nrOfPages": "300",
+      "startingDate": "6-6-2023",
+      "endDate": "8-6-2023",
+      "review": "lorem",
+      "nrOfStars": "6",
+      "id": 674545
+    },
+    {
+      "bookName": "Monte Cassino",
+      "author": "Sven Hassel",
+      "nrOfPages": "256",
+      "startingDate": "6-4-2023",
+      "endDate": "8-5-2023",
+      "review": "lorem",
+      "nrOfStars": "9",
+      "id": 534209
+    }
+  ]
+}
