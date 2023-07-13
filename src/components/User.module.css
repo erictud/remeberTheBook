@@ -1,0 +1,25 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user svg {
+  width: 4rem;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.user-details h5 {
+  font-size: 2rem;
+}
+
+.user-details p {
+  font-size: 1.5rem;
+  color: var(--color-dark--0);
+}

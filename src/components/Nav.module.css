@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 2px solid var(--color-brand--1);
+}
+
+.logo svg {
+  width: 5rem;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 7rem;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  animation: navAnimation 0.5s ease;
+}
+
+@media (min-width: 1400px) {
+  .nav {
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: navAnimationBigScreen 0.5s ease;
+  }
+}
+
+.nav img {
+  width: 30rem;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.link-item a:link,
+.link-item a:visited {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  text-transform: lowercase;
+  font-size: monospace;
+  padding: 0.5rem 0.2rem;
+}
+
+.link-item a:global(.active) {
+  padding-bottom: 0;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-brand--1);
+}
+
+.nav-btn {
+  display: block;
+  z-index: 100;
+}
+
+.nav-btn svg {
+  width: 5rem;
+  color: black;
+}
+
+.credits {
+  position: absolute;
+  bottom: 2%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-light-1);
+}
+
+:global(.btn) a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+@keyframes navAnimation {
+  from {
+    transform: translateY(60rem);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes navAnimationBigScreen {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
