@@ -1,0 +1,18 @@
+.books-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.books-container h2 {
+  font-size: 2rem;
+  font-family: monospace;
+  letter-spacing: 0.3rem;
+  font-weight: 900;
+}
+
+.books-list {
+  padding-top: 1rem;
+  list-style: none;
+}

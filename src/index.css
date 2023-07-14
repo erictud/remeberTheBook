@@ -132,6 +132,11 @@ input:focus {
   font-weight: 700;
 }
 
+.back-btn {
+  padding: 0;
+  width: 10rem;
+}
+
 @media (min-width: 1400px) {
   html {
     background-color: bisque;

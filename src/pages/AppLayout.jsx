@@ -3,8 +3,10 @@ import styles from "./AppLayout.module.css";
 
 export default function AppLayout() {
   return (
-    <div>
-      AppLayout
+    <div className="page">
+      <h1 className={styles["title-logo"]}>
+        <span>remember</span>The<span>Book</span>
+      </h1>
       <Outlet />
     </div>
   );

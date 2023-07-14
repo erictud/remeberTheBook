@@ -37,9 +37,6 @@ export default function Nav() {
                 <li className={styles["link-item"]}>
                   <NavLink to="app/books">All books read</NavLink>
                 </li>
-                <li className={styles["link-item"]}>
-                  <NavLink to="app/overview">Books overview</NavLink>
-                </li>
               </>
             )}
             {!isAuthenticated ? (

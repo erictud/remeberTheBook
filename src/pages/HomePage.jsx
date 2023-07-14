@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LightBulbIcon from "../icons/LightBulbIcon";
 import styles from "./HomePage.module.css";
 
@@ -12,6 +13,9 @@ export default function HomePage() {
           You can now store in a concise manner the information and the opinion about every book
           you've read
         </p>
+        <button className="btn">
+          <Link to="login">Login</Link>
+        </button>
       </div>
       <h2 className={styles.title}>Features</h2>
       <div className={styles["feature-row"]}>

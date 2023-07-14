@@ -1,0 +1,14 @@
+.title-logo {
+  text-align: center;
+  font-size: 3rem;
+  font-family: monospace;
+  text-transform: lowercase;
+}
+
+.title-logo span {
+  color: var(--color-dark--1);
+}
+
+.title-logo span:last-of-type {
+  color: var(--color-brand--1);
+}

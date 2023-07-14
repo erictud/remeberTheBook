@@ -1,22 +1,12 @@
 {
   "books": [
     {
-      "bookName": "Adventures of Huckleberry Finn",
-      "author": "Mark Twain",
-      "nrOfPages": "300",
-      "startingDate": "6-6-2023",
-      "endDate": "8-6-2023",
-      "review": "lorem",
-      "nrOfStars": "6",
-      "id": 674545
-    },
-    {
-      "bookName": "Monte Cassino",
+      "name": "Monte Cassino",
       "author": "Sven Hassel",
       "nrOfPages": "256",
       "startingDate": "6-4-2023",
       "endDate": "8-5-2023",
-      "review": "lorem",
+      "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ratione voluptate quisquam eius porro aliquid enim vel, laudantium natus aut saepe. Temporibus minima, similique dolore exercitationem voluptatibus iure placeat optio odit eveniet a nisi consequatur sapiente impedit expedita saepe reprehenderit voluptas veniam enim! Illo iste sint, placeat, tenetur totam repellat aperiam recusandae reprehenderit libero ad voluptatibus minus fugiat velit illum quidem repellendus minima consectetur eos accusantium ullam rerum doloremque. Tempora commodi at laudantium repellendus odit quibusdam libero vero nesciunt omnis. Maxime vitae perspiciatis corrupti excepturi, adipisci, expedita doloribus fugit, labore harum pariatur ipsum vero? Iste ad esse deserunt eveniet porro.",
       "nrOfStars": "9",
       "id": 534209
     }
