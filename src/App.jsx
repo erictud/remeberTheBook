@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import { BooksContextProvider } from "./context/BooksContext";
 import BookList from "./components/BookList";
 import Book from "./components/Book";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route index element={<Navigate to="books" />} />
               <Route path="books" element={<BookList />} />
               <Route path="books/:bookId" element={<Book />} />
+              <Route path="form" element={<Form />} />
             </Route>
             <Route path="login" element={<Login />} />
             <Route path="*" element={<PageNotFound />} />

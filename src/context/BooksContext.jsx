@@ -19,6 +19,14 @@ function reducer(state, action) {
         isLoading: false,
         books: state.books.filter((book) => book.id !== action.payload),
       };
+    case "book/created":
+      return {
+        ...state,
+        isLoading: false,
+        books: [...state.books, action.payload],
+      };
+    case "clearError":
+      return { ...state, error: "" };
     case "rejected":
       return { ...state, isLoading: false, error: action.payload };
     default:
@@ -70,7 +78,6 @@ const BooksContextProvider = function ({ children }) {
 
   async function deleteBook(id) {
     dispatch({ type: "loading" });
-    console.log(id);
     try {
       await fetch(`${URL}/${id}`, {
         method: "DELETE",
@@ -78,6 +85,23 @@ const BooksContextProvider = function ({ children }) {
       dispatch({ type: "book/deleted", payload: id });
     } catch (err) {
       dispatch({ type: "rejected", payload: "There was an error when deleting the book" });
+    }
+  }
+
+  async function createBook(book) {
+    dispatch({ type: "loading" });
+    try {
+      const res = await fetch(`${URL}`, {
+        method: "POST",
+        body: JSON.stringify(book),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await res.json();
+      dispatch({ type: "book/created", payload: data });
+    } catch (err) {
+      dispatch({ type: "rejected", payload: "There was an error when creating the book" });
     }
   }
 
@@ -90,6 +114,8 @@ const BooksContextProvider = function ({ children }) {
         currentBook,
         getBook,
         deleteBook,
+        dispatch,
+        createBook,
       }}
     >
       {children}
